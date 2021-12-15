@@ -1,0 +1,149 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Suzanne Moore | Personal Portfolio </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <title> Suzanne Moore | Personal Portfolio </title>
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+<body>
+
+    <main>
+        <section class="main-intro">
+
+            <h1>Hi, I'm Suzanne!</h1>
+            <br /><h3>I design and build websites.</h3><br />
+ 
+        </section>
+        <section id="aboutMe">
+            <header class="aboutMe-head">
+                <h1>About Me</h1>
+                <h4>
+                    Hi, everyone! I have my Bachelor of Science in Computer Science, and I am from Bay St Louis, Mississippi. <br/><br/>
+
+
+
+                    I am passionate about software development and timely, reliable deployment of web applications. 
+                    I live and breathe by daily coding and learning new technologies. I have a high level of proficiency 
+                    in AWS and being able to drive an project from being just an idea into a fully accessible application/service. 
+                    My personal toolkit that I use for this are AWS services such as EC2 instances for hosting, elastic beanstalk for 
+                    my publishing needs that are integrated into Visual Studio, and Route 53 for domain registration needs. 
+                    This website is even build on this hosting solution! I use Visual Studio heavily as my IDE of choice for its 
+                    GitHub and AWS integration and being able to build ASP.NET Core projects. I have a general proficiency with HTML5, 
+                    CSS3, and JavaScript as well as C# for making the most out of ASP.NET Core! SQL is another of my strong points with 
+                    MySQL being my database management system of choice. I also use Python for day-to-day scripting tasks and general 
+                    learning. It doesn't end there, there is so many more tools that I know and would love to share with you. 
+                    Check out my resume and the rest of the website!
+                </h4>
+            </header>
+        </section>
+        <section id="projects">
+            <header class="projects-head">
+                <h1>Projects</h1>
+                
+            </header>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <h3>
+                            <a href="https://suzanneemoore.com/">PERSONAL PORTFOLIO</a>
+                        </h3>
+                    </div>
+
+                    <p>
+                        A hosted web portfolio that demonstrates my understanding of web design, version control, and an in-depth knowledge
+                        of Amazon Web Services and its many tools.  This includes everything to take an idea from its inception,
+                        all of the way into a deployed project.
+                    </p>
+
+                    <h4><a href="https://github.com/Suzannemoore/Portfolio">GitHub Repository.</a>  </h4>
+                </div>
+              
+                <div class="card">
+                    <div class="card-icon">
+                        <h3>
+                            <a href="http://travel.suzanneemoore.com/">SWOOSE TRAVEL</a>
+                        </h3>
+                    </div>
+                    <p>
+                        A sample website that demonstrates competency in web design using HTML5 and CSS. 
+
+                    </p>
+
+                    <h4> <br/><a href="http://travel.suzanneemoore.com/">Swoose Travel hyperlink.</a> <br/><br/>
+                    <a href="https://github.com/Suzannemoore/SwooseTravel">Swoose Travel GitHub Repository.</a> </h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+          
+            <header class="contact-head">
+                <h1>
+                    Contact Me <br />
+                </h1>
+                <hr class="section-break">
+                <h3>
+                    <br /> LinkedIn: <a href="https://www.linkedin.com/in/suzanne-moore-b66409211/">Check out my LinkedIn page.</a> <br /> <br />
+                </h3>
+
+                <hr class="section-break">
+                <h3>
+                    <br /> Contact me by phone: (228) 493-5682 <br /> <br />
+                </h3>
+
+                <hr class="section-break">
+                <h3>
+                    <br /> Send Me An Email Instead! suzannemoorewrk@gmail.com<br /> <br />
+                </h3>
+
+                <hr class="section-break">
+
+                <h3>
+                    <br /> Resume Download: <a href="../pdf/Moore-Suzanne_Resume.pdf" download="Moore-Suzanne_Resume">Download Resume</a><br /> <br />
+                </h3>
+
+            </header>
+
+        </section>
+
+
+
+        <footer>
+            <div class="footer-wrapper">
+                <h5>Suzanne Moore</h5>
+            </div>
+        </footer>
+
+    </main>
+
+    @*Resize*@
+    <style>
+
+        .body-container {
+            /*remove the container default padding attribute*/
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            /*increase width as per your need*/
+            max-width: 100%;
+        }
+    </style>
+
+
+</body>
+</html>

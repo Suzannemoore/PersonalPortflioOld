@@ -1,0 +1,291 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 61.3%;
+}
+
+h1 {
+    font-size: 10.6rem;
+    font-family: 'Style Script', cursive;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+li,
+label,
+input,
+p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+
+button {
+    padding: 2rem 4rem;
+    background: white;
+    border: none;
+    font-size: 1.9rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 1s ease-out 0.5s;
+}
+
+    button:hover {
+        background: #90c7c1;
+    }
+
+.nav-item {
+    color: white;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    nav ul {
+        display: flex;
+        flex: 1 1 40rem;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+
+#logo {
+    flex: 2 1 40rem;
+    font-size: 5.25rem;
+    font-family: 'Style Script', cursive;
+    font-weight: 400;
+}
+
+.main-intro {
+    min-height: 90vh;
+    background: url("../img/introbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+    .main-intro h3 {
+        padding: 4rem;
+    }
+
+#aboutMe {
+    min-height: 70vh;
+    background: url("../img/marble.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.aboutMe-head {
+    width: 90%;
+    margin: auto;
+}
+
+    .aboutMe-head h1 {
+        padding: 3rem 6rem;
+        text-align: center;
+    }
+
+    .aboutMe-head h4 {
+        padding: 4rem 16rem;
+        text-align: left;
+        color: #333;
+    }
+
+/*layout form media*/
+@media screen and (max-width: 932px) {
+    html {
+        font-size: 30%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #Logo {
+        padding: 1rem;
+    }
+}
+
+
+.projects-head {
+    background: #EACDCF;
+    padding: 3rem;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+.cards {
+    width: 62%;
+    margin: auto;
+    display: flex;
+    min-height: 50vh;
+    align-items: inherit;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 5rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+    max-width: 15%;
+    margin: 2rem;
+}
+
+.card h4,
+.card p {
+    padding: 1rem;
+    line-height: 1.8;
+}
+
+.card-icon {
+    background: #90c7c1
+}
+
+
+.a, a:visited {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link {
+    color: #333;
+    cursor: pointer;
+}
+
+
+#contact {
+    min-height: 50vh;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    color: #333;
+    padding: 2rem;
+    font-family: brandon-grotesque;
+    text-align: center;
+    color: #333;
+}
+
+.contact-head {
+    width: 90%;
+    margin: auto;
+}
+
+    .contact-head h3 {
+        font-size: 2.4rem;
+        font-weight: normal;
+    }
+
+
+.form-wrapper {
+    background: #333;
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form,
+.message-form {
+    padding: 3rem;
+    text-align: center;
+}
+
+textarea {
+    width: 50%;
+    padding: 3rem;
+}
+
+.form-wrapper label {
+    margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+footer {
+    color: white;
+    background: #90c7c1;
+    font-family: 'Style Script', cursive;
+    font-weight: 400;
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 15vh;
+    flex-wrap: wrap;
+}
+
+footer h5 {
+    flex: 1 1 20rem;
+    font-size: 4.25rem;
+}
